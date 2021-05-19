@@ -8,7 +8,7 @@
 - If you are comfortable with your local setup, feel free to use that.
 
 ### 1. Programming in C++ (22/04/21 - 27/04/21 )
-1.  Theory: [Reference: learncpp.com]
+1.  Theory: [Reference: [learncpp.com](learncpp.com)]
     * No previous programming experience
         1. Fundamental Data Types and Operators
         2. Control Flow and Error Handling
@@ -23,13 +23,13 @@
             * Linked Lists
             * Stacks
             * Queues
-2. Problem Sets: [Reference: hackerrank.com/domains/cpp]
+2. Problem Sets: [Reference: [hackerrank.com/domains/cpp](hackerrank.com/domains/cpp)]
     * No previous programming experience
         * Solve Hackerrank cpp problem sets till Problem 15, “Classes and Objects”
     * Completed ESC101/Fluent in C/C++ programming
         * Solve Hackerrank cpp problem sets till Problem 30, “CPP Exception Handling”, depending on your confidence, you can skip first 10 Problems
 ### 2. Programming in Python (28/04/21 - 02/05/21)
-1. Theory: [Reference: learnpython.org]
+1. Theory: [Reference: [learnpython.org](learnpython.org)]
     * No previous programming experience
         1. Control Flow and Error Handling
         2. Lists, Dictionaries and Tuples
@@ -38,7 +38,7 @@
         5. File Handling
     * Completed ESC101/Fluent in Python programming
         1. If familiar with above topics move to Problem Sets
-2. Problem Sets: [Reference: hackerrank.com/domains/python]
+2. Problem Sets: [Reference: [hackerrank.com/domains/python](hackerrank.com/domains/python)]
     * No previous programming experience
         * Solve Hackerrank Python problem sets till Problem 15, “String Split and Join”
     * Completed ESC101/Fluent in C/C++ programming
