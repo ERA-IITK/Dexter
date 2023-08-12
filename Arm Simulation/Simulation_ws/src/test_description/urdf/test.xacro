@@ -1,0 +1,177 @@
+<?xml version="1.0" ?>
+<robot name="test" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find test_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find test_description)/urdf/test.trans" />
+<xacro:include filename="$(find test_description)/urdf/test.gazebo" />
+
+<link name="world"/>
+<link name="base_link">
+  <inertial>
+    <origin xyz="0.002627025718145887 0.0018168583679358929 0.01943654315821824" rpy="0 0 0"/>
+    <mass value="0.3358994137046097"/>
+    <inertia ixx="0.015716" iyy="0.00938" izz="0.021587" ixy="0.000314" iyz="8.1e-05" ixz="7.2e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://test_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="opaque160160160"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://test_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Upper_Arm_v1_1">
+  <inertial>
+    <origin xyz="0.06084260066038855 0.018073059422100655 -0.04092014077337344" rpy="0 0 0"/>
+    <mass value="0.01737351952462784"/>
+    <inertia ixx="0.000377" iyy="0.000923" izz="0.000706" ixy="-7.8e-05" iyz="5.3e-05" ixz="0.000412"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.057276 0.01888 -0.272108" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://test_description/meshes/Upper_Arm_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="opaque6815072"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.057276 0.01888 -0.272108" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://test_description/meshes/Upper_Arm_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Gripper_holder_1">
+  <inertial>
+    <origin xyz="0.02614783175447949 0.016741346037815158 -0.032533908946886514" rpy="0 0 0"/>
+    <mass value="0.0031885132878487776"/>
+    <inertia ixx="0.000835" iyy="0.000735" izz="0.000218" ixy="-5e-06" iyz="9e-06" ixz="0.000104"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.225725 0.008528 -0.160724" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://test_description/meshes/Gripper_holder_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="opaque160160160"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.225725 0.008528 -0.160724" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://test_description/meshes/Gripper_holder_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Lower_Arm_v1_1">
+  <inertial>
+    <origin xyz="0.02041623168935574 0.013152269530085525 0.09946711451008255" rpy="0 0 0"/>
+    <mass value="0.06471244693244322"/>
+    <inertia ixx="0.003628" iyy="0.003458" izz="0.000882" ixy="-0.000108" iyz="8.7e-05" ixz="-0.000812"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.002712 0.016362 -0.049536" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://test_description/meshes/Lower_Arm_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="opaque23217335"/>
+  </visual>
+  <collision>
+    <origin xyz="0.002712 0.016362 -0.049536" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://test_description/meshes/Lower_Arm_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Geared_shaft_1">
+  <inertial>
+    <origin xyz="-0.00011583643525059925 0.014441824168826438 8.071508410950612e-08" rpy="0 0 0"/>
+    <mass value="0.13951903287709957"/>
+    <inertia ixx="2.1e-05" iyy="1.3e-05" izz="2.1e-05" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.002355 0.060854 -0.049536" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://test_description/meshes/Geared_shaft_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="steel_satin"/>
+  </visual>
+  <collision>
+    <origin xyz="0.002355 0.060854 -0.049536" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://test_description/meshes/Geared_shaft_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Rack_1">
+  <inertial>
+    <origin xyz="-0.0037798777765754472 -3.0809250456266535e-05 -0.04188485878700296" rpy="0 0 0"/>
+    <mass value="0.6058243930815651"/>
+    <inertia ixx="0.006966" iyy="0.007468" izz="0.000524" ixy="-4e-06" iyz="-1.5e-05" ixz="-0.00187"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.018716 0.038938 -0.23898" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://test_description/meshes/Rack_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="opaque89149218"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.018716 0.038938 -0.23898" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://test_description/meshes/Rack_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="world_to_base_link=" type="fixed">
+     <parent link="world"/>
+     <child link="base_link"/>
+     <origin xyz="0 0 0.02" rpy="0 0 0"/>
+</joint>
+
+<joint name="Rev4" type="continuous">
+  <origin xyz="0.059988 -0.002518 0.222572" rpy="0 0 0"/>
+  <parent link="Lower_Arm_v1_1"/>
+  <child link="Upper_Arm_v1_1"/>
+  <axis xyz="0.008026 -0.999968 -0.0"/>
+</joint>
+
+<joint name="Rev5" type="continuous">
+  <origin xyz="0.168449 0.010352 -0.111384" rpy="0 0 0"/>
+  <parent link="Upper_Arm_v1_1"/>
+  <child link="Gripper_holder_1"/>
+  <axis xyz="-0.008026 0.999968 0.0"/>
+</joint>
+
+<joint name="Rev6" type="continuous">
+  <origin xyz="-0.002712 -0.016362 0.049536" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="Lower_Arm_v1_1"/>
+  <axis xyz="-0.008026 0.999968 0.0"/>
+</joint>
+
+<joint name="Rev14" type="continuous">
+  <origin xyz="-0.002355 -0.060854 0.049536" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="Geared_shaft_1"/>
+  <axis xyz="0.008026 -0.999968 -0.0"/>
+</joint>
+
+<joint name="Slider24" type="prismatic">
+  <origin xyz="0.021428 -0.022576 0.189444" rpy="0 0 0"/>
+  <parent link="Lower_Arm_v1_1"/>
+  <child link="Rack_1"/>
+  <axis xyz="-0.260184 -0.002088 -0.965557"/>
+  <limit upper="100" lower="-100" effort="100000000000" velocity="100000"/>
+</joint>
+
+</robot>
