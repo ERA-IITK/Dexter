@@ -4,5 +4,5 @@ This folder contains the **CAD** Design and **Part** Drawings for the Robotic Ar
 #### CAD:
 This folder contains the **CAD** design made on AutoDesk Fusion360
 
-#### Arm Drawings:
-This folder contains the **Part** drawings containg dimension drawings for different parts of Robotic Arm.
+#### Drawings:
+This folder contains the **Part** drawings containing dimension drawings for different parts of the Robotic Arm.
